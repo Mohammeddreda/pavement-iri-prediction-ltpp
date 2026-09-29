@@ -1,7 +1,6 @@
 # Pavement IRI Prediction Using Machine Learning on LTPP Data
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
 
 > Companion repository for:
 > Mohammed R. Salah, "Dual-Purpose Pavement IRI Prediction with Group-Aware Validation: A Machine Learning Approach Using LTPP Data", submitted to ASCE Journal of Transportation Engineering, Part B: Pavements (under review).
@@ -155,24 +154,8 @@ If you use this data or code, please cite:
 Mohammed R. Salah (2026). Dual-Purpose Pavement IRI Prediction with Group-Aware Validation:
 A Machine Learning Approach Using LTPP Data.
 ASCE Journal of Transportation Engineering, Part B: Pavements (under review).
-DOI: 10.5281/zenodo.XXXXXXX
 Repository: https://github.com/Mohammeddreda/pavement-iri-prediction-ltpp
 ```
-
-> Note: The DOI badge above will be updated with the actual Zenodo DOI once assigned. See the [DOI Registration](#doi-registration) section below.
-
----
-
-## DOI Registration
-
-To make this repository permanently citable with a DOI:
-
-1. Go to [zenodo.org](https://zenodo.org) and log in with your GitHub account
-2. Under "GitHub" settings in Zenodo, flip the toggle ON for `pavement-iri-prediction-ltpp`
-3. On GitHub, create a Release (e.g., `v1.0.0`) — Zenodo will automatically archive it and issue a DOI
-4. Copy the DOI (e.g., `10.5281/zenodo.1234567`) and replace `XXXXXXX` in this README and in your manuscript's Data Availability Statement
-
----
 
 ## License
 
