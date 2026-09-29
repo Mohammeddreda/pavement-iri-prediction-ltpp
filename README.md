@@ -1,7 +1,10 @@
 # Pavement IRI Prediction Using Machine Learning on LTPP Data
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+
 > Companion repository for:
-> Mohammed R. Salah, "Dual-Purpose Pavement IRI Prediction with Group-Aware Validation: A Machine Learning Approach Using LTPP Data"*, submitted to ASCE Journal of Transportation Engineering, Part B: Pavements* (under review).
+> Mohammed R. Salah, "Dual-Purpose Pavement IRI Prediction with Group-Aware Validation: A Machine Learning Approach Using LTPP Data", submitted to ASCE Journal of Transportation Engineering, Part B: Pavements (under review).
 
 ---
 
@@ -10,6 +13,8 @@
 This repository provides the data and code for a machine-learning study that predicts the International Roughness Index (IRI) of asphalt pavements using the FHWA Long-Term Pavement Performance (LTPP) database.
 
 The key scientific contribution is the demonstration of data leakage in published IRI prediction models. Prior work used random train/test splits on the LTPP panel dataset, where the same road sections (SHRP_ID) appear in both training and testing. We show this inflates R² by 0.32–0.40 points. Applying Group K-Fold cross-validation (grouped by section ID) yields honest estimates, and adding the previous IRI measurement as a feature closes most of the performance gap.
+
+---
 
 ## Repository Structure
 
@@ -37,6 +42,8 @@ pavement-iri-prediction-ltpp/
 └── pavement_iri_pipeline.py       # Full reproducible ML pipeline
 ```
 
+---
+
 ## Scenario Naming Convention
 
 | Scenario | Use Case | IRI_prev | Additional Material Features |
@@ -57,7 +64,7 @@ pavement-iri-prediction-ltpp/
 
 ## Data Source
 
-All data originate from the LTPP database (FHWA), specifically Dry-No-Freeze pavement sections. These sections were selected because their climatic conditions (low precipitation, no freeze–thaw cycles) are representative of arid climates.
+All data originate from the LTPP database (FHWA), specifically Dry-No-Freeze pavement sections. These sections were selected because their climatic conditions (low precipitation, no freeze–thaw cycles) are representative of arid climates including Egypt, which motivated this study.
 
 | LTPP Source Table | Variable(s) Extracted |
 |---|---|
@@ -106,8 +113,9 @@ pip install pandas numpy scikit-learn xgboost shap matplotlib seaborn openpyxl s
    cd pavement-iri-prediction-ltpp
    ```
 
-2. Place your raw LTPP Excel file (`Final Data - R01.xlsx`) in the root directory.  
-   *(The processed scenario CSVs in `data/` are already provided for direct use.)*
+2. To reproduce the ML results directly, the processed scenario CSVs in `data/` are already provided — the pipeline will use them from Stage 3 onward without the raw Excel file.
+
+   To re-run the full pipeline from scratch (including EDA and scenario building), place the raw LTPP Excel file (`Final Data - R01.xlsx`) in the root directory. This file is derived from the [LTPP InfoPave portal](https://infopave.fhwa.dot.gov/) and is available from the authors upon request.
 
 3. Run the full pipeline:
    ```bash
@@ -152,6 +160,17 @@ Repository: https://github.com/Mohammeddreda/pavement-iri-prediction-ltpp
 ```
 
 > Note: The DOI badge above will be updated with the actual Zenodo DOI once assigned. See the [DOI Registration](#doi-registration) section below.
+
+---
+
+## DOI Registration
+
+To make this repository permanently citable with a DOI:
+
+1. Go to [zenodo.org](https://zenodo.org) and log in with your GitHub account
+2. Under "GitHub" settings in Zenodo, flip the toggle ON for `pavement-iri-prediction-ltpp`
+3. On GitHub, create a Release (e.g., `v1.0.0`) — Zenodo will automatically archive it and issue a DOI
+4. Copy the DOI (e.g., `10.5281/zenodo.1234567`) and replace `XXXXXXX` in this README and in your manuscript's Data Availability Statement
 
 ---
 
