@@ -1,0 +1,4 @@
+Transition,Model_used,N_sections_smaller_full,N_sections_matched,N_sections_richer,R2_smaller_full_sections,R2_smaller_matched_sections,R2_richer_full,Subset_effect(matched-full),Feature_effect(richer-matched),Total_reported_gain(richer-full)
+S1_A -> S2_A,Random Forest,216,157,157,0.3945,0.3946,0.5285,0.0001,0.1339,0.134
+S2_A -> S3_A,XGBoost,157,118,118,0.4716,0.3122,0.471,-0.1594,0.1588,-0.0006
+S3_A -> S4_A,Random Forest,118,115,115,0.4463,0.3982,0.5104,-0.0481,0.1122,0.0641

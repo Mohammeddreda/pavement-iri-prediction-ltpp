@@ -1,0 +1,13 @@
+Scenario,Model,Best Params,CV R2,CV R2 Std,CV RMSE,CV MAE,CV MAPE,RKF R2,RKF R2 Std
+S1_B,Tuned XGBoost,"{'subsample': 1.0, 'n_estimators': 500, 'min_child_weight': 1, 'max_depth': 4, 'learning_rate': 0.08, 'gamma': 0, 'colsample_bytree': 0.7}",0.8353,0.0378,0.2357,0.1309,11.4,0.8488,0.0407
+S1_B,Tuned Random Forest,"{'n_estimators': 500, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'log2', 'max_depth': 20}",0.8354,0.0406,0.2356,0.129,11.93,0.8565,0.0341
+S1_B,Tuned Gradient Boosting,"{'subsample': 0.8, 'n_estimators': 500, 'min_samples_split': 2, 'max_depth': 4, 'learning_rate': 0.1}",0.8441,0.0495,0.2293,0.1256,10.87,0.846,0.0364
+S2_B,Tuned XGBoost,"{'subsample': 0.7, 'n_estimators': 300, 'min_child_weight': 3, 'max_depth': 5, 'learning_rate': 0.05, 'gamma': 0, 'colsample_bytree': 0.7}",0.8581,0.0721,0.2114,0.1255,12.4,0.9089,0.0403
+S2_B,Tuned Random Forest,"{'n_estimators': 300, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 0.5, 'max_depth': None}",0.8727,0.0499,0.2002,0.11,11.17,0.8994,0.0451
+S2_B,Tuned Gradient Boosting,"{'subsample': 0.8, 'n_estimators': 500, 'min_samples_split': 2, 'max_depth': 4, 'learning_rate': 0.05}",0.8898,0.0626,0.1863,0.102,9.94,0.8984,0.0454
+S3_B,Tuned XGBoost,"{'subsample': 0.9, 'n_estimators': 700, 'min_child_weight': 1, 'max_depth': 4, 'learning_rate': 0.05, 'gamma': 0, 'colsample_bytree': 0.7}",0.832,0.1272,0.2331,0.1346,13.02,0.9125,0.0501
+S3_B,Tuned Random Forest,"{'n_estimators': 300, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 0.5, 'max_depth': None}",0.8558,0.0768,0.216,0.1197,12.3,0.8983,0.0464
+S3_B,Tuned Gradient Boosting,"{'subsample': 0.7, 'n_estimators': 500, 'min_samples_split': 5, 'max_depth': 5, 'learning_rate': 0.05}",0.8772,0.0863,0.1993,0.1084,10.63,0.9036,0.069
+S4_B,Tuned XGBoost,"{'subsample': 0.9, 'n_estimators': 300, 'min_child_weight': 3, 'max_depth': 6, 'learning_rate': 0.05, 'gamma': 0.1, 'colsample_bytree': 0.8}",0.8714,0.1132,0.2064,0.1167,11.9,0.8996,0.0387
+S4_B,Tuned Random Forest,"{'n_estimators': 200, 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_features': 0.5, 'max_depth': 15}",0.8653,0.1233,0.2112,0.118,12.07,0.8874,0.0517
+S4_B,Tuned Gradient Boosting,"{'subsample': 0.8, 'n_estimators': 300, 'min_samples_split': 5, 'max_depth': 3, 'learning_rate': 0.1}",0.8729,0.1288,0.2052,0.1113,10.86,0.8858,0.0558

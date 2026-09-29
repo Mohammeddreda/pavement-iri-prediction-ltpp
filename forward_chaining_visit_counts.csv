@@ -1,0 +1,5 @@
+Scenario,N_rows,N_sections,Median_visits_per_section,Mean_visits_per_section,Min_visits,Max_visits,N_sections_single_visit,N_sections_multi_visit
+S1_B,1921,216,9.0,8.89,1,31,10,206
+S2_B,1072,157,6.0,6.83,1,21,4,153
+S3_B,765,118,6.0,6.48,1,21,5,113
+S4_B,744,115,6.0,6.47,1,21,5,110

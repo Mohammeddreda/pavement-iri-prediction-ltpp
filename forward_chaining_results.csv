@@ -1,0 +1,5 @@
+Scenario,N_train_rows,N_test_rows,N_test_sections,ForwardChaining_R2,ForwardChaining_R2_CI_low,ForwardChaining_R2_CI_high,ForwardChaining_RMSE,ForwardChaining_MAE,RandomKFold_R2_reported,RandomKFold_R2_std_reported,Gap_RKF_minus_ForwardChaining
+S1_B,1715,206,206,0.7288,0.6326,0.819,0.4208,0.2264,0.8488,0.0407,0.12
+S2_B,919,153,153,0.8987,0.8584,0.9356,0.2395,0.1408,0.9089,0.0403,0.0102
+S3_B,652,113,113,0.9292,0.8898,0.9536,0.1862,0.1223,0.9125,0.0501,-0.0167
+S4_B,634,110,110,0.9134,0.8667,0.9465,0.2087,0.13,0.8996,0.0387,-0.0138
